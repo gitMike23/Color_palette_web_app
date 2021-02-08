@@ -1,0 +1,77 @@
+.colors__wrapper {
+    min-height: 80vh;
+    display: flex;
+    color: $main_bcgr;
+}
+
+.colors__color {
+    height: 80vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.colors__color h2 {
+    font-size: 2rem;
+    cursor: pointer;
+} 
+
+.color__sliders {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    background-color: white;
+    padding: 1.5rem;
+    width: 80%;
+
+    bottom: 0%;
+    // transform: translateY(100px);
+
+    // opacity: 0;
+
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+    transition: all 0.5s ease-in-out;
+    // pointer-events: none;
+}
+
+.color__sliders.active {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+}
+
+.color__sliders button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: $close__btn;
+    color: white;
+    font-weight: bold;
+
+}
+
+.color__controls {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin: 1rem 0;
+    width: 100%;
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+}

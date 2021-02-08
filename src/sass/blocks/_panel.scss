@@ -1,0 +1,32 @@
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+.panel button {
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+
+    background-color: $panel__btn;
+    color: white;
+
+    border:none;
+    border-radius: 1rem;
+
+    cursor: pointer;
+}
+
+.panel p {
+    font-size: 1.2rem;
+}
+
+.panel__library, 
+.panel__generate, 
+.panel__save {
+display: flex;
+flex-direction: column;
+align-items: center;
+}

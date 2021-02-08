@@ -1,0 +1,27 @@
+@import './base/vars';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    color: $main_text;
+}
+
+button {
+    font-family: 'Mulish', sans-serif;
+}
+
+path, i, svg {
+    pointer-events: none;
+}
+
+@import './blocks/colors';
+@import './blocks/panel';
+@import './blocks/controls';
+@import './blocks/copy';
+
+
