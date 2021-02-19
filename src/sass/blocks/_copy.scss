@@ -1,4 +1,6 @@
-.copy {
+.copy, 
+.save, 
+.library {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,9 +18,11 @@
     pointer-events: none;
     visibility: hidden;
 
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-in-out;
 }
-.copy.active { 
+.copy.active,
+.save.active,
+.library.active { 
     opacity: 1;
     pointer-events: all;
     visibility: visible;
@@ -26,7 +30,9 @@
 
 
 
-.copy__popup {
+.copy__popup, 
+.save__popup, 
+.library__popup {
     min-width: 30%;
     min-height: 30%;
 
@@ -43,11 +49,15 @@
     transition: all 0.3s ease; 
 }
 
-.copy.active .copy__popup {
+.copy.active .copy__popup, 
+.save.active .save__popup, 
+.library.active .library__popup {
     transform: translateY(0);
 }
 
-.copy__popup h4 {
+.copy__popup h4, 
+.save__popup h4, 
+.library__popup h4{
     font-size: 2rem;
     padding: 1rem;
 }

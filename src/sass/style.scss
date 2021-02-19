@@ -14,6 +14,9 @@ body {
 button {
     font-family: 'Mulish', sans-serif;
 }
+button:focus, button:active {
+    outline: none;
+}
 
 path, i, svg {
     pointer-events: none;
@@ -23,5 +26,6 @@ path, i, svg {
 @import './blocks/panel';
 @import './blocks/controls';
 @import './blocks/copy';
+@import './blocks/popups';
 
 
